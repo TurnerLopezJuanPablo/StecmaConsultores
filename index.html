@@ -16,117 +16,201 @@
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <div class="blue-bg">
+        <nav class="max-width top-nav">
+            <h5 class="poppins-medium nav-text">Stecma Consultores</h5>
 
-    <nav class="blue-bg py-3 px-5 justify-content-between">
-        <h5 class="poppins-medium">Stecma Consultores</h5>
-        <div class="poppins-semibold">
-            <h6><a href="#servicios">Servicios</a></h6>
-            <h6><a href="#nosotros">Nosotros</a></h6>
-            <h6><a href="#contactos">Contactos</a></h6>
-        </div>
-    </nav>
-
-    <main class="m-0">
-        <section class="blue-bg d-flex justify-content-around align-items-center px-5 pt-4">
-            <div class="ps-5 main-section">
-                <p class="poppins-light mb-0 p-main">Stecma Consultores</p>
-                <h1 class="main-text">Habilitaciones Seguridad e Higiene</h1>
-                <p class="main-text p2-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra laoreet in
-                    est
-                    tortor quam pretium
-                    tellus pretium sit. </p>
+            <div class="poppins-semibold nav-items">
+                <h6 class="nav-item"><a href="#servicios">Servicios</a></h6>
+                <h6 class="nav-item"><a href="#nosotros">Nosotros</a></h6>
+                <h6 class="nav-item"><a href="#contactos">Contactos</a></h6>
             </div>
 
-            <img class="main-photo" src="/images/pixelcut-export-removebg-preview.png"
-                alt="imagen-seguridad-e-higiene-principal">
-        </section>
+            <h6 class="icon" onclick="responsiveNav()">&#9776;</h6>
+        </nav>
+    </div>
+
+    <div class="nav-menu d-none dark-blue-bg">
+        <a onclick="closeNavMenu()" href="#servicios" class="nav-menu-item">Servicios</a>
+        <a onclick="closeNavMenu()" href="#nosotros" class="nav-menu-item">Nosotros</a>
+        <a onclick="closeNavMenu()" href="#contactos" class="nav-menu-item">Contactos</a>
+    </div>
+
+    <main class="m-0">
+        <div class="blue-bg">
+            <section class="max-width d-flex justify-content-around align-items-center px-5">
+                <div class="ps-5 main-section">
+                    <p class="poppins-light mb-0 p-main">Stecma Consultores</p>
+                    <h1 class="main-text">Habilitaciones Seguridad e Higiene</h1>
+                    <p class="main-text p2-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                        laoreet in
+                        est
+                        tortor quam pretium
+                        tellus pretium sit. </p>
+                </div>
+
+                <img class="main-photo" src="/images/pixelcut-export-removebg-preview.png"
+                    alt="imagen-seguridad-e-higiene-principal">
+            </section>
+        </div>
 
         <div class="m-0" id="servicios"></div>
         <!-- This is only to set the href up in the page :D -->
 
         <section class="section-2">
-            <h3 class="ps-5 pb-4">Servicios</h3>
+            <h3 class="max-width ps-5 pb-4">Servicios</h3>
 
-            <div class="d-flex flex-wrap justify-content-center">
+            <div class="d-flex flex-wrap justify-content-center max-width">
 
-                <article class="card-article">
+                <article class="card-article" id="article-1">
                     <div class="bg-secondary card-services"></div>
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Analisis de tarea segura.</h5>
+
+                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin scelerisque risus, tortor, </p>
-                    <p class="link">Leer más</p>
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link" id="link-1" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="false"
+                        aria-controls="collapseExample1" onclick="toggleAccordions(1)">Leer más</p>
                 </article>
 
-                <article class="card-article">
+                <article class="card-article" id="article-2">
                     <div class="bg-secondary card-services"></div>
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Analisis de tarea segura.</h5>
+
+                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin scelerisque risus, tortor, </p>
-                    <p class="link">Leer más</p>
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link" id="link-2" data-bs-toggle="collapse" href="#collapseExample2" aria-expanded="false"
+                        aria-controls="collapseExample2" onclick="toggleAccordions(2)">Leer más</p>
                 </article>
 
-                <article class="card-article">
+                <article class="card-article" id="article-3">
                     <div class="bg-secondary card-services"></div>
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Analisis de tarea segura.</h5>
+
+                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin scelerisque risus, tortor, </p>
-                    <p class="link">Leer más</p>
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link" id="link-3" data-bs-toggle="collapse" href="#collapseExample3" aria-expanded="false"
+                        aria-controls="collapseExample3" onclick="toggleAccordions(3)">Leer más</p>
                 </article>
 
-                <article class="card-article">
+                <article class="card-article" id="article-4">
                     <div class="bg-secondary card-services"></div>
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Analisis de tarea segura.</h5>
+
+                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin scelerisque risus, tortor, </p>
-                    <p class="link">Leer más</p>
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link" id="link-4" data-bs-toggle="collapse" href="#collapseExample4" aria-expanded="false"
+                        aria-controls="collapseExample4" onclick="toggleAccordions(4)">Leer más</p>
                 </article>
 
-                <article class="card-article">
+                <article class="card-article" id="article-5">
                     <div class="bg-secondary card-services"></div>
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Analisis de tarea segura.</h5>
+
+                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin scelerisque risus, tortor, </p>
-                    <p class="link">Leer más</p>
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link" id="link-5" data-bs-toggle="collapse" href="#collapseExample5" aria-expanded="false"
+                        aria-controls="collapseExample5" onclick="toggleAccordions(5)">Leer más</p>
                 </article>
 
-                <article class="card-article">
+                <article class="card-article" id="article-6">
                     <div class="bg-secondary card-services"></div>
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Analisis de tarea segura.</h5>
+
+                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin scelerisque risus, tortor, </p>
-                    <p class="link">Leer más</p>
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample6">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link" id="link-6" data-bs-toggle="collapse" href="#collapseExample6" aria-expanded="false"
+                        aria-controls="collapseExample6" onclick="toggleAccordions(6)">Leer más</p>
                 </article>
 
-                <article class="card-article">
+                <article class="card-article" id="article-7">
                     <div class="bg-secondary card-services"></div>
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Analisis de tarea segura.</h5>
+
+                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin scelerisque risus, tortor, </p>
-                    <p class="link">Leer más</p>
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample7">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link" id="link-7" data-bs-toggle="collapse" href="#collapseExample7" aria-expanded="false"
+                        aria-controls="collapseExample7" onclick="toggleAccordions(7)">Leer más</p>
                 </article>
 
-                <article class="card-article">
+                <article class="card-article" id="article-8">
                     <div class="bg-secondary card-services"></div>
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Analisis de tarea segura.</h5>
+
+                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin scelerisque risus, tortor, </p>
-                    <p class="link">Leer más</p>
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample8">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link" id="link-8" data-bs-toggle="collapse" href="#collapseExample8" aria-expanded="false"
+                        aria-controls="collapseExample8" onclick="toggleAccordions(8)">Leer más</p>
                 </article>
 
-                <article class="card-article">
+                <article class="card-article" id="article-9">
                     <div class="bg-secondary card-services"></div>
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Analisis de tarea segura.</h5>
+
+                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin scelerisque risus, tortor, </p>
-                    <p class="link">Leer más</p>
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample9">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link" id="link-9" data-bs-toggle="collapse" href="#collapseExample9" aria-expanded="false"
+                        aria-controls="collapseExample9" onclick="toggleAccordions(9)">Leer más</p>
                 </article>
 
             </div>
 
         </section>
 
-        <section class="d-flex justify-content-around align-items-center px-5 section-3" id="nosotros">
+        <section class="d-flex justify-content-around align-items-center section-3 max-width px-5" id="nosotros">
             <img class="main-photo"
                 src="/images/Estilo_azul_del_concepto_del_disen╠âo_plano_del_desarrollo_web_con_el_cara╠ücter_adornado_de_las_pequen╠âas_personas____Vector_Premium-removebg-preview.png"
                 alt="imagen-seguridad-e-higiene-principal">
@@ -138,7 +222,15 @@
                     nuestros clientes y de sus empleados. <br><br>Garantizamos calidad, dedicada atención y
                     profesionalismo en cada uno de nuestros servicios.
                 </p>
-                <button type="button" class="btn-section-3 mt-3">Leer más</button>
+                <div class="collapse" id="collapseExampleNosotros">
+                    <div class="poppins-regular pb-2">
+                        Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                        mostrar en el acordeón.
+                    </div>
+                </div>
+                <button type="button" class="btn-section-3 mt-3" id="link-nosotros" data-bs-toggle="collapse"
+                    href="#collapseExampleNosotros" aria-expanded="false" aria-controls="collapseExampleNosotros"
+                    onclick="toggleAccordions('nosotros')">Leer más</button>
             </div>
 
         </section>
@@ -153,62 +245,48 @@
             </article>
         </section>
 
-        <footer class="footer">
-            <article class="d-flex justify-content-around align-items-center flex-wrap fs-bold poppins-medium">
-                <div class="contact-container divs-footer">
-                    <h4 class="pb-3 poppins-regular">Stecma Consultores</h4>
-                    <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vestibulum et quis eu,
-                        magna varius.</p>
+        <div class="max-width">
+            <footer class="footer">
+                <article class="d-flex justify-content-around align-items-center flex-wrap fs-bold poppins-medium">
+                    <div class="contact-container divs-footer">
+                        <h4 class="pb-3 poppins-regular">Stecma Consultores</h4>
+                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vestibulum et quis
+                            eu,
+                            magna varius.</p>
+                    </div>
+
+                    <div class="contact-container divs-footer text-center">
+                        <h5 class="pb-4 contact-item"><a href="#servicios">Servicios</a></h5>
+                        <h5 class="pb-4 contact-item"><a href="#nosotros">Nosotros</a></h5>
+                        <h5 class="pb-4 contact-item"><a href="#contactos">Contactos</a></h5>
+                    </div>
+
+                    <div class="contact-container divs-footer">
+                        <p class="pb-3">Contacto</p>
+                        <p class="pb-3 grey">stecmaconsultores@gmail.com</p>
+                        <p class="pb-3 grey"> (+54 9) 11 3900 2826 </5>
+                    </div>
+                </article>
+
+                <div class="ps-4 social-media-container poppins-medium fs-bold">
+                    <span class="item-active">Facebook</span>
+                    <span class="point">&#8226;</span>
+                    <span class="item-active">Twitter</span>
+                    <span class="point">&#8226;</span>
+                    <span class="item-active">Instagram</span>
                 </div>
 
-                <div class="contact-container divs-footer text-center">
-                    <h5 class="pb-4 contact-item"><a href="#servicios">Servicios</a></h5>
-                    <h5 class="pb-4 contact-item"><a href="#nosotros">Nosotros</a></h5>
-                    <h5 class="pb-4 contact-item"><a href="#contactos">Contactos</a></h5>
-                </div>
+                <hr>
 
-                <div class="contact-container divs-footer">
-                    <p class="pb-3">Contacto</p>
-                    <p class="pb-3 grey">stecmaconsultores@gmail.com</p>
-                    <p class="pb-3 grey"> (+54 9) 11 3900 2826 </5>
-                </div>
-            </article>
+                <p class="card-text poppins-light text-end my-4 pe-4">&copy; <span id="currentYear"></span>
+                    Stecma Consultores</p>
+            </footer>
+        </div>
 
-            <div class="ps-4 social-media-container poppins-medium fs-bold">
-                <span class="item-active">Facebook</span>
-                <span class="point">&#8226;</span>
-                <span class="item-active">Twitter</span>
-                <span class="point">&#8226;</span>
-                <span class="item-active">Instagram</span>
-            </div>
-
-            <hr>
-
-            <p class="card-text poppins-light text-end my-4 pe-4">&copy; <span id="currentYear"></span>
-                Stecma Consultores</p>
-        </footer>
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
     </main>
 </body>
 
-<script>
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
-
-    let mybutton = document.getElementById("myBtn");
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
+<script src="main.js"></script>
 
 </html>

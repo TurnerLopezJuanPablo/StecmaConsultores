@@ -1,5 +1,12 @@
+/* MAIN STYLES */
+
 .blue-bg {
     background-color: #17044D;
+    color: white;
+}
+
+.dark-blue-bg {
+    background-color: #0e032e;
     color: white;
 }
 
@@ -9,10 +16,16 @@ a {
 }
 
 body {
-    margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     overflow-x: hidden;
 }
+
+.max-width {
+    margin: 0 auto !important;
+    max-width: 1700px;
+}
+
+/* SCROLLBAR STYLES */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -30,6 +43,8 @@ body {
     background: #0e032e;
     cursor: n-resize;
 }
+
+/* FONT: POPPINS STYLES */
 
 .poppins-regular {
     font-family: "Poppins", sans-serif;
@@ -55,6 +70,10 @@ body {
     font-style: normal;
 }
 
+/* STYLES IN GENERAL */
+
+/* NAV STYLES */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -75,10 +94,73 @@ div h6 {
     margin: auto 50px;
 }
 
-div h6:hover {
-    color: rgb(197, 197, 197);
+div h6:hover,
+.icon:hover,
+.nav-menu-item:hover {
+    color: rgb(197, 197, 197) !important;
     cursor: pointer;
 }
+
+.icon {
+    display: none;
+    font-size: x-large;
+}
+
+.icon-closed {
+    font-size: 2rem;
+    padding-top: 0.2rem !important;
+}
+
+.top-nav {
+    overflow: hidden;
+    padding: 1.4rem 3.2rem;
+}
+
+.nav-text {
+    min-width: 340px;
+}
+
+.nav-menu {
+    text-align: center;
+    padding: 1rem 0;
+
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu-item {
+    font-size: 1.5rem;
+    flex-grow: 1;
+    padding-bottom: 10px;
+}
+
+.nav-menu-item:hover {
+    padding-left: 10px;
+    transition: 200ms;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-items {
+        display: none;
+    }
+
+    .top-nav {
+        padding: 1.4rem 1rem;
+    }
+
+    .icon {
+        float: right;
+        display: block;
+        padding: 0.85rem 0;
+    }
+
+    .nav-menu {
+        display: inherit;
+    }
+}
+
+/* MAIN STYLES */
 
 .main-text {
     width: 400px;
@@ -100,6 +182,8 @@ div h6:hover {
 .main-photo {
     height: 410px;
 }
+
+/* SECTION-2 STYLES */
 
 .section-2 {
     margin: 80px;
@@ -143,8 +227,10 @@ div h6:hover {
     transition: 200ms;
 }
 
+/* SECTION-3 STYLES */
+
 .section-3 {
-    margin-bottom: 8rem;
+    margin-bottom: 8rem !important;
 }
 
 .section-3-text {
@@ -165,11 +251,15 @@ div h6:hover {
     color: white;
 }
 
+/* SECTION-4 / CONTACTS STYLES */
+
 .section-4 {
     padding: 80px 0;
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* FOOTER STYLES */
 
 .footer {
     margin: 0 80px;
@@ -218,6 +308,8 @@ footer>article {
     color: rgb(141, 141, 141);
 }
 
+/* GO TO TOP BUTTON STYLES */
+
 #myBtn {
     display: none;
     position: fixed;
@@ -226,7 +318,7 @@ footer>article {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #17044D;
+    background-color: #0e032e;
     color: white;
     cursor: pointer;
     padding: 3px 17px;
@@ -235,5 +327,5 @@ footer>article {
 }
 
 #myBtn:hover {
-    background-color: #0e032e;
+    background-color: #08021a;
 }
