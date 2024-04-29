@@ -67,32 +67,38 @@ function toggleAccordions(id) {
         article.innerHTML = 'Leer menos';
 
         setTimeout(() => {
-            articleSection.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' })
+            if (window.innerWidth < 900 && id === 'nosotros') {
+                articleSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+            } else {
+                articleSection.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+            }
         }, 250);
     }
     else article.innerHTML = 'Leer más';
 
-    let i = 1;
-    let accordion = document.getElementById('link-' + i);
+    if (id !== 'nosotros') {
+        let i = 1;
+        let accordion = document.getElementById('link-' + i);
 
-    while (accordion !== null) {
-        if (i !== id && accordion.ariaExpanded === 'true') {
-            const collapseElement = document.getElementById('collapseExample' + i);
-            const isCollapsed = collapseElement.classList.contains('show');
+        while (accordion !== null) {
+            if (i !== id && accordion.ariaExpanded === 'true') {
+                const collapseElement = document.getElementById('collapseExample' + i);
+                const isCollapsed = collapseElement.classList.contains('show');
 
-            if (isCollapsed) {
-                var bsCollapse = new bootstrap.Collapse(collapseElement, {
-                    toggle: false
-                });
+                if (isCollapsed) {
+                    var bsCollapse = new bootstrap.Collapse(collapseElement, {
+                        toggle: false
+                    });
 
-                bsCollapse.hide();
+                    bsCollapse.hide();
+                }
+
+                accordion.ariaExpanded = 'false';
+                accordion.innerHTML = 'Leer más';
             }
 
-            accordion.ariaExpanded = 'false';
-            accordion.innerHTML = 'Leer más';
+            i++;
+            accordion = document.getElementById('link-' + i);
         }
-
-        i++;
-        accordion = document.getElementById('link-' + i);
     }
 }

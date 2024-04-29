@@ -532,6 +532,7 @@ footer>article {
     .footer-container {
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
     }
 
     .contact-container {
