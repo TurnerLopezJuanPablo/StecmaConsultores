@@ -38,15 +38,15 @@
 
     <main class="m-0">
         <div class="blue-bg">
-            <section class="max-width d-flex justify-content-around align-items-center px-5">
-                <div class="ps-5 main-section">
+            <section class="max-width section-1">
+                <div class="main-section">
                     <p class="poppins-light mb-0 p-main">Stecma Consultores</p>
                     <h1 class="main-text">Habilitaciones Seguridad e Higiene</h1>
-                    <p class="main-text p2-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                    <!-- <p class="main-text p2-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
                         laoreet in
                         est
                         tortor quam pretium
-                        tellus pretium sit. </p>
+                        tellus pretium sit. </p> -->
                 </div>
 
                 <img class="main-photo" src="/images/pixelcut-export-removebg-preview.png"
@@ -60,7 +60,7 @@
         <section class="section-2">
             <h3 class="max-width ps-5 pb-4">Servicios</h3>
 
-            <div class="d-flex flex-wrap justify-content-center max-width">
+            <div class="d-flex flex-wrap justify-content-evenly max-width">
 
                 <article class="card-article" id="article-1">
                     <div class="bg-secondary card-services"></div>
@@ -210,27 +210,32 @@
 
         </section>
 
-        <section class="d-flex justify-content-around align-items-center section-3 max-width px-5" id="nosotros">
-            <img class="main-photo"
+        <section class="section-3 max-width" id="nosotros">
+            <img class="main-photo2"
                 src="/images/Estilo_azul_del_concepto_del_disen╠âo_plano_del_desarrollo_web_con_el_cara╠ücter_adornado_de_las_pequen╠âas_personas____Vector_Premium-removebg-preview.png"
                 alt="imagen-seguridad-e-higiene-principal">
 
-            <div class="ps-5 main-section">
+            <div class="main-section">
                 <h3 class="section-3-text">Nosotros</h3>
+
                 <p class="poppins-regular">Trabajamos para mantener resultados de manera sustentable en el tiempo,
                     obteniendo un máximo de confort, salud, seguridad e higiene en las condiciones de trabajos de
                     nuestros clientes y de sus empleados. <br><br>Garantizamos calidad, dedicada atención y
                     profesionalismo en cada uno de nuestros servicios.
                 </p>
+
                 <div class="collapse" id="collapseExampleNosotros">
                     <div class="poppins-regular pb-2">
                         Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
                         mostrar en el acordeón.
                     </div>
                 </div>
-                <button type="button" class="btn-section-3 mt-3" id="link-nosotros" data-bs-toggle="collapse"
-                    href="#collapseExampleNosotros" aria-expanded="false" aria-controls="collapseExampleNosotros"
-                    onclick="toggleAccordions('nosotros')">Leer más</button>
+
+                <div class="btn-center">
+                    <button type="button" class="btn-section-3 mt-3" id="link-nosotros" data-bs-toggle="collapse"
+                        href="#collapseExampleNosotros" aria-expanded="false" aria-controls="collapseExampleNosotros"
+                        onclick="toggleAccordions('nosotros')">Leer más</button>
+                </div>
             </div>
 
         </section>
@@ -238,7 +243,8 @@
         <section class="blue-bg text-center" id="contactos">
             <article class="section-4">
                 <h2 class="pb-4">Contáctate con nosotros</h2>
-                <p class="py-1 pt-4 poppins-light">Por pedido de presupuestos o consultas pueden comunicarse a través
+                <p class="py-1 pt-4 poppins-light text-contacts">Por pedido de presupuestos o consultas pueden
+                    comunicarse a través
                     de: </p>
                 <p class="poppins-medium py-1 pt-4"><strong>Mail: stecmaconsultores@gmail.com</strong></p>
                 <p class="poppins-medium py-1"><strong>Teléfono: (+54 9) 11 3900 2826</strong></p>
@@ -247,28 +253,32 @@
 
         <div class="max-width">
             <footer class="footer">
-                <article class="d-flex justify-content-around align-items-center flex-wrap fs-bold poppins-medium">
+                <article class="footer-container poppins-medium">
                     <div class="contact-container divs-footer">
                         <h4 class="pb-3 poppins-regular">Stecma Consultores</h4>
                         <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vestibulum et quis
                             eu,
                             magna varius.</p>
+
+                        <hr class="hr-footer mb-3">
                     </div>
 
                     <div class="contact-container divs-footer text-center">
                         <h5 class="pb-4 contact-item"><a href="#servicios">Servicios</a></h5>
                         <h5 class="pb-4 contact-item"><a href="#nosotros">Nosotros</a></h5>
                         <h5 class="pb-4 contact-item"><a href="#contactos">Contactos</a></h5>
+
+                        <hr class="hr-footer mb-3">
                     </div>
 
                     <div class="contact-container divs-footer">
                         <p class="pb-3">Contacto</p>
                         <p class="pb-3 grey">stecmaconsultores@gmail.com</p>
-                        <p class="pb-3 grey"> (+54 9) 11 3900 2826 </5>
+                        <p class="grey"> (+54 9) 11 3900 2826 </5>
                     </div>
                 </article>
 
-                <div class="ps-4 social-media-container poppins-medium fs-bold">
+                <div class="social-media-container poppins-medium fs-bold">
                     <span class="item-active">Facebook</span>
                     <span class="point">&#8226;</span>
                     <span class="item-active">Twitter</span>
