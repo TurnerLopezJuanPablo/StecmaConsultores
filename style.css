@@ -286,16 +286,11 @@ div h6:hover,
 }
 
 .card-services {
-    min-width: 250px;
     max-width: 350px;
-
-    min-height: 200px;
-    max-height: 300px;
+    max-height: 200px;
 
     border-radius: 10px;
-
     margin-bottom: 1rem;
-
     overflow: hidden;
 }
 
@@ -329,11 +324,7 @@ div h6:hover,
 
     .card-services {
         max-width: 300px;
-        min-width: 200px;
-
-        max-height: 250px;
-        min-height: 150px;
-
+        max-height: 180px;
     }
 
     .card-article h5 {
@@ -357,10 +348,7 @@ div h6:hover,
 
     .card-services {
         max-width: 250px;
-        min-width: 150px;
-
-        max-height: 250px;
-        min-height: 150px;
+        max-height: 150px;
     }
 }
 
