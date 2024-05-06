@@ -13,12 +13,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Logo.png">
 </head>
 
 <body>
-    <div class="blue-bg">
+    <div class="green-bg">
         <nav class="max-width top-nav">
-            <h5 class="poppins-medium nav-text">Stecma Consultores</h5>
+            <h5 class="poppins-medium nav-text">
+                <div class="bt5">
+                    <div class="circle">S</div>
+                </div>
+                <span class="span-nav">Stecma Consultores</span>
+            </h5>
 
             <div class="poppins-semibold nav-items">
                 <h6 class="nav-item"><a href="#servicios">Servicios</a></h6>
@@ -26,34 +32,31 @@
                 <h6 class="nav-item"><a href="#contactos">Contactos</a></h6>
             </div>
 
-            <h6 class="icon" onclick="responsiveNav()">&#9776;</h6>
+            <h6 class="icon no-select" onclick="responsiveNav()">&#9776;</h6>
         </nav>
-    </div>
 
-    <div class="nav-menu d-none dark-blue-bg">
-        <a onclick="closeNavMenu()" href="#servicios" class="nav-menu-item">Servicios</a>
-        <a onclick="closeNavMenu()" href="#nosotros" class="nav-menu-item">Nosotros</a>
-        <a onclick="closeNavMenu()" href="#contactos" class="nav-menu-item">Contactos</a>
-    </div>
+        <div class="nav-menu d-none dark-green-bg">
+            <a onclick="closeNavMenu()" href="#servicios" class="nav-menu-item">Servicios</a>
+            <a onclick="closeNavMenu()" href="#nosotros" class="nav-menu-item">Nosotros</a>
+            <a onclick="closeNavMenu()" href="#contactos" class="nav-menu-item">Contactos</a>
+        </div>
 
-    <main class="m-0">
-        <div class="blue-bg">
-            <section class="max-width section-1">
-                <div class="main-section">
-                    <p class="poppins-light mb-0 p-main">Stecma Consultores</p>
-                    <h1 class="main-text">Habilitaciones Seguridad e Higiene</h1>
-                    <!-- <p class="main-text p2-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+        <section class="max-width section-1">
+            <div class="main-section">
+                <p class="poppins-light mb-0 p-main">Stecma Consultores</p>
+                <h1 class="main-text">Habilitaciones Seguridad e Higiene</h1>
+                <!-- <p class="main-text p2-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
                         laoreet in
                         est
                         tortor quam pretium
                         tellus pretium sit. </p> -->
-                </div>
+            </div>
 
-                <img class="main-photo" src="/images/pixelcut-export-removebg-preview.png"
-                    alt="imagen-seguridad-e-higiene-principal">
-            </section>
-        </div>
+            <img class="main-photo" src="/images/pixelcut-export-2.png" alt="imagen-seguridad-e-higiene-principal">
+        </section>
+    </div>
 
+    <main class="m-0">
         <div class="m-0" id="servicios"></div>
         <!-- This is only to set the href up in the page :D -->
 
@@ -63,9 +66,12 @@
             <div class="d-flex flex-wrap justify-content-evenly max-width">
 
                 <article class="card-article" id="article-1">
-                    <div class="bg-secondary card-services"></div>
+                    <div class="card-services">
+                        <img src="images/como-habilitar-una-inmobiliaria.jpg" class="card-img-top"
+                            alt="Habilitaciones de empresa, locales, obra y cartelería">
+                    </div>
 
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
+                    <h5 class="pt-2">Habilitaciones de empresa, locales, obra y cartelería.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin scelerisque risus, tortor.</p>
                     <div class="collapse" id="collapseExample1">
@@ -74,14 +80,18 @@
                             mostrar en el acordeón.
                         </div>
                     </div>
-                    <p class="link" id="link-1" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="false"
-                        aria-controls="collapseExample1" onclick="toggleAccordions(1)">Leer más</p>
+                    <p class="link no-select" id="link-1" data-bs-toggle="collapse" href="#collapseExample1"
+                        aria-expanded="false" aria-controls="collapseExample1" onclick="toggleAccordions(1)">Leer más
+                    </p>
                 </article>
 
                 <article class="card-article" id="article-2">
-                    <div class="bg-secondary card-services"></div>
+                    <div class="card-services">
+                        <img src="images/pixelcut-export.jpeg" class="card-img-top"
+                            alt="Servicio general de Seguridad e Higiene en el trabajo y medio ambiente">
+                    </div>
 
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
+                    <h5 class="pt-2">Servicio general de Seguridad e Higiene en el trabajo y medio ambiente.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin scelerisque risus, tortor.</p>
                     <div class="collapse" id="collapseExample2">
@@ -90,14 +100,18 @@
                             mostrar en el acordeón.
                         </div>
                     </div>
-                    <p class="link" id="link-2" data-bs-toggle="collapse" href="#collapseExample2" aria-expanded="false"
-                        aria-controls="collapseExample2" onclick="toggleAccordions(2)">Leer más</p>
+                    <p class="link no-select" id="link-2" data-bs-toggle="collapse" href="#collapseExample2"
+                        aria-expanded="false" aria-controls="collapseExample2" onclick="toggleAccordions(2)">Leer más
+                    </p>
                 </article>
 
                 <article class="card-article" id="article-3">
-                    <div class="bg-secondary card-services"></div>
+                    <div class="card-services">
+                        <img src="images/simulacros-incendio-empresas.jpeg" class="card-img-top img-big-2"
+                            alt="Planes de evacuación / simulacros. Ley 5920">
+                    </div>
 
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
+                    <h5 class="pt-2">Planes de evacuación / simulacros. Ley 5920.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin scelerisque risus, tortor.</p>
                     <div class="collapse" id="collapseExample3">
@@ -106,14 +120,19 @@
                             mostrar en el acordeón.
                         </div>
                     </div>
-                    <p class="link" id="link-3" data-bs-toggle="collapse" href="#collapseExample3" aria-expanded="false"
-                        aria-controls="collapseExample3" onclick="toggleAccordions(3)">Leer más</p>
+                    <p class="link no-select" id="link-3" data-bs-toggle="collapse" href="#collapseExample3"
+                        aria-expanded="false" aria-controls="collapseExample3" onclick="toggleAccordions(3)">Leer más
+                    </p>
                 </article>
 
                 <article class="card-article" id="article-4">
-                    <div class="bg-secondary card-services"></div>
+                    <div class="card-services">
+                        <img src="images/Medicion-de-Tierras.jpeg" class="card-img-top"
+                            alt="Mediciones de puesta a tierra / Iluminación / Mediciones de ruido / Carga térmica.">
+                    </div>
 
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
+                    <h5 class="pt-2">Mediciones de puesta a tierra / Iluminación / Mediciones de ruido / Carga térmica.
+                    </h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin scelerisque risus, tortor.</p>
                     <div class="collapse" id="collapseExample4">
@@ -122,14 +141,18 @@
                             mostrar en el acordeón.
                         </div>
                     </div>
-                    <p class="link" id="link-4" data-bs-toggle="collapse" href="#collapseExample4" aria-expanded="false"
-                        aria-controls="collapseExample4" onclick="toggleAccordions(4)">Leer más</p>
+                    <p class="link no-select" id="link-4" data-bs-toggle="collapse" href="#collapseExample4"
+                        aria-expanded="false" aria-controls="collapseExample4" onclick="toggleAccordions(4)">Leer más
+                    </p>
                 </article>
 
                 <article class="card-article" id="article-5">
-                    <div class="bg-secondary card-services"></div>
+                    <div class="card-services">
+                        <img src="images/6ffe08cd-2684-4ed4-869b-4c4313b0a6fe.jpg" class="card-img-top img-big"
+                            alt="Impacto ambiental. Organización Provincial del Desarrollo Sostenible - Agencia de Protección Ambiental">
+                    </div>
 
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
+                    <h5 class="pt-2">Impacto ambiental. OPDS - APRA.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin scelerisque risus, tortor.</p>
                     <div class="collapse" id="collapseExample5">
@@ -138,14 +161,18 @@
                             mostrar en el acordeón.
                         </div>
                     </div>
-                    <p class="link" id="link-5" data-bs-toggle="collapse" href="#collapseExample5" aria-expanded="false"
-                        aria-controls="collapseExample5" onclick="toggleAccordions(5)">Leer más</p>
+                    <p class="link no-select" id="link-5" data-bs-toggle="collapse" href="#collapseExample5"
+                        aria-expanded="false" aria-controls="collapseExample5" onclick="toggleAccordions(5)">Leer más
+                    </p>
                 </article>
 
                 <article class="card-article" id="article-6">
-                    <div class="bg-secondary card-services"></div>
+                    <div class="card-services">
+                        <img src="images/Seguridad-e-higiene-industrial-400x250.jpg" class="card-img-top"
+                            alt="Programas de seguridad para obras">
+                    </div>
 
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
+                    <h5 class="pt-2">Programas de seguridad para obras.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin scelerisque risus, tortor.</p>
                     <div class="collapse" id="collapseExample6">
@@ -154,14 +181,19 @@
                             mostrar en el acordeón.
                         </div>
                     </div>
-                    <p class="link" id="link-6" data-bs-toggle="collapse" href="#collapseExample6" aria-expanded="false"
-                        aria-controls="collapseExample6" onclick="toggleAccordions(6)">Leer más</p>
+                    <p class="link no-select" id="link-6" data-bs-toggle="collapse" href="#collapseExample6"
+                        aria-expanded="false" aria-controls="collapseExample6" onclick="toggleAccordions(6)">Leer más
+                    </p>
                 </article>
 
                 <article class="card-article" id="article-7">
-                    <div class="bg-secondary card-services"></div>
+                    <div class="card-services">
+                        <img src="images/depositphotos_169565822-stock-photo-emergency-plan-team-and-work.jpg"
+                            class="card-img-top"
+                            alt="Planos de incendio. Dirección General de Registro de Obras y Catastro">
+                    </div>
 
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
+                    <h5 class="pt-2">Planos de incendio. DGROC.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin scelerisque risus, tortor.</p>
                     <div class="collapse" id="collapseExample7">
@@ -170,14 +202,18 @@
                             mostrar en el acordeón.
                         </div>
                     </div>
-                    <p class="link" id="link-7" data-bs-toggle="collapse" href="#collapseExample7" aria-expanded="false"
-                        aria-controls="collapseExample7" onclick="toggleAccordions(7)">Leer más</p>
+                    <p class="link no-select" id="link-7" data-bs-toggle="collapse" href="#collapseExample7"
+                        aria-expanded="false" aria-controls="collapseExample7" onclick="toggleAccordions(7)">Leer más
+                    </p>
                 </article>
 
                 <article class="card-article" id="article-8">
-                    <div class="bg-secondary card-services"></div>
+                    <div class="card-services">
+                        <img src="images/plano-especificaciones-generales-703892_hd.webp" class="card-img-top"
+                            alt="Confección de planos a escala">
+                    </div>
 
-                    <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
+                    <h5 class="pt-2">Confección de planos a escala.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin scelerisque risus, tortor.</p>
                     <div class="collapse" id="collapseExample8">
@@ -186,12 +222,16 @@
                             mostrar en el acordeón.
                         </div>
                     </div>
-                    <p class="link" id="link-8" data-bs-toggle="collapse" href="#collapseExample8" aria-expanded="false"
-                        aria-controls="collapseExample8" onclick="toggleAccordions(8)">Leer más</p>
+                    <p class="link no-select" id="link-8" data-bs-toggle="collapse" href="#collapseExample8"
+                        aria-expanded="false" aria-controls="collapseExample8" onclick="toggleAccordions(8)">Leer más
+                    </p>
                 </article>
 
                 <article class="card-article" id="article-9">
-                    <div class="bg-secondary card-services"></div>
+                    <div class="card-services">
+                        <img src="images/capacitacion.jpg" class="card-img-top"
+                            alt="Capacitaciones - Permisos de trabajo - Análisis de tarea segura.">
+                    </div>
 
                     <h5 class="pt-2">Capacitaciones - Permisos de trabajo - Análisis de tarea segura.</h5>
                     <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -202,8 +242,89 @@
                             mostrar en el acordeón.
                         </div>
                     </div>
-                    <p class="link" id="link-9" data-bs-toggle="collapse" href="#collapseExample9" aria-expanded="false"
-                        aria-controls="collapseExample9" onclick="toggleAccordions(9)">Leer más</p>
+                    <p class="link no-select" id="link-9" data-bs-toggle="collapse" href="#collapseExample9"
+                        aria-expanded="false" aria-controls="collapseExample9" onclick="toggleAccordions(9)">Leer más
+                    </p>
+                </article>
+
+                <article class="card-article" id="article-10">
+                    <div class="card-services">
+                        <img src="images/fpkdl.com_960_images_fpkdl.com_960_reparador-ventana-sujecion-trabajando-interior-habitacion-moderna_146671-70370-1.jpg"
+                            class="card-img-top" alt="Certificados ignífugos, vidrios inastillables">
+                    </div>
+
+                    <h5 class="pt-2">Certificados ignífugos, vidrios inastillables.</h5>
+                    <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample10">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link no-select" id="link-10" data-bs-toggle="collapse" href="#collapseExample10"
+                        aria-expanded="false" aria-controls="collapseExample10" onclick="toggleAccordions(10)">Leer más
+                    </p>
+                </article>
+
+                <article class="card-article" id="article-11">
+                    <div class="card-services">
+                        <img src="images/6403bce66cd72d921ac8149e32021feb_XL.jpg" class="card-img-top img-big"
+                            alt="Registro de Actividades Industriales">
+                    </div>
+
+                    <h5 class="pt-2">Registro de Actividades Industriales.</h5>
+                    <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample11">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link no-select" id="link-11" data-bs-toggle="collapse" href="#collapseExample11"
+                        aria-expanded="false" aria-controls="collapseExample11" onclick="toggleAccordions(11)">Leer más
+                    </p>
+                </article>
+
+                <article class="card-article" id="article-12">
+                    <div class="card-services">
+                        <img src="images/images.jpeg" class="card-img-top img-big-2"
+                            alt="Confección de planos a escala">
+                    </div>
+
+                    <h5 class="pt-2">Ley de frentes y balcones.</h5>
+                    <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample12">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link no-select" id="link-12" data-bs-toggle="collapse" href="#collapseExample12"
+                        aria-expanded="false" aria-controls="collapseExample12" onclick="toggleAccordions(12)">Leer más
+                    </p>
+                </article>
+
+                <article class="card-article" id="article-13">
+                    <div class="card-services">
+                        <img src="images/1c36a015-9983-43ec-9423-e51111ab2429.jpg" class="card-img-top"
+                            alt="Programa de seguridad en obras de contruccion">
+                    </div>
+
+                    <h5 class="pt-2">Programa de seguridad en obras de contruccion.</h5>
+                    <p class="card-text poppins-light pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin scelerisque risus, tortor.</p>
+                    <div class="collapse" id="collapseExample13">
+                        <div class="card-text poppins-light pb-2">
+                            Aquí puedes agregar más detalles sobre el artículo, o cualquier otro contenido que desees
+                            mostrar en el acordeón.
+                        </div>
+                    </div>
+                    <p class="link no-select" id="link-13" data-bs-toggle="collapse" href="#collapseExample13"
+                        aria-expanded="false" aria-controls="collapseExample13" onclick="toggleAccordions(13)">Leer más
+                    </p>
                 </article>
 
             </div>
@@ -211,8 +332,7 @@
         </section>
 
         <section class="section-3 max-width">
-            <img class="main-photo2"
-                src="/images/Estilo_azul_del_concepto_del_disen╠âo_plano_del_desarrollo_web_con_el_cara╠ücter_adornado_de_las_pequen╠âas_personas____Vector_Premium-removebg-preview.png"
+            <img class="main-photo2" src="/images/483a6b7d54d2c1a6afa770e0a0d3fa2a-removebg-preview.png"
                 alt="imagen-seguridad-e-higiene-principal">
 
             <div class="main-section" id="article-nosotros">
@@ -232,15 +352,15 @@
                 </div>
 
                 <div class="btn-center">
-                    <button type="button" class="btn-section-3 mt-3" id="link-nosotros" data-bs-toggle="collapse"
-                        href="#collapseExampleNosotros" aria-expanded="false" aria-controls="collapseExampleNosotros"
-                        onclick="toggleAccordions('nosotros')">Leer más</button>
+                    <button type="button" class="btn-section-3 mt-3 no-select" id="link-nosotros"
+                        data-bs-toggle="collapse" href="#collapseExampleNosotros" aria-expanded="false"
+                        aria-controls="collapseExampleNosotros" onclick="toggleAccordions('nosotros')">Leer más</button>
                 </div>
             </div>
 
         </section>
 
-        <section class="blue-bg text-center" id="contactos">
+        <section class="green-bg text-center" id="contactos">
             <article class="section-4">
                 <h2 class="pb-4">Contáctate con nosotros</h2>
                 <p class="py-1 pt-4 poppins-light text-contacts">Por pedido de presupuestos o consultas pueden
@@ -255,10 +375,14 @@
             <footer class="footer">
                 <article class="footer-container poppins-medium">
                     <div class="contact-container divs-footer">
-                        <h4 class="pb-3 poppins-regular">Stecma Consultores</h4>
-                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vestibulum et quis
-                            eu,
-                            magna varius.</p>
+                        <h4 class="pb-3 poppins-regular">
+                            <div class="bt5">
+                                <div class="circle">S</div>
+                            </div>
+                            <span class="text-footer">Stecma Consultores</span>
+                        </h4>
+                        <p class="pb-3">Garantizamos calidad, dedicada atención y profesionalismo en cada uno de
+                            nuestros servicios.</p>
 
                         <hr class="hr-footer mb-3">
                     </div>
@@ -293,7 +417,7 @@
             </footer>
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="no-select">↑</button>
     </main>
 </body>
 

@@ -63,7 +63,7 @@ function toggleAccordions(id) {
     const article = document.getElementById('link-' + id);
     const articleSection = document.getElementById('article-' + id);
 
-    if (article.innerHTML === 'Leer más') {
+    if (article.innerHTML.trim() === 'Leer más') {
         article.innerHTML = 'Leer menos';
 
         setTimeout(() => {
