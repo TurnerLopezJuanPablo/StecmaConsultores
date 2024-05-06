@@ -122,8 +122,7 @@ div h6:hover,
 
 .nav-text {
     min-width: 340px;
-    display: inline-flex;
-    align-items: center;
+    display: block;
 }
 
 @media screen and (max-width: 700px) {
@@ -158,6 +157,20 @@ div h6:hover,
 .nav-menu-item:hover {
     padding-left: 10px;
     transition: 200ms;
+}
+
+.item-nav {
+    display: block;
+}
+
+@media screen and (max-width: 1100px) {
+    nav div {
+        gap: 15px;
+    }
+
+    div h6 {
+        margin: auto 30px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -482,28 +495,6 @@ div h6:hover,
     margin: 0 80px;
 }
 
-.point {
-    font-size: 30px;
-    padding-bottom: 4px;
-}
-
-.social-media-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: black;
-    padding-left: 1.5rem;
-}
-
-.social-media-container .point {
-    margin: 0 5px;
-}
-
-.item-active:hover {
-    color: #868686;
-    cursor: pointer;
-}
-
 .contact-container {
     color: #585858;
 }
@@ -521,7 +512,7 @@ div h6:hover,
 }
 
 footer>article {
-    margin: 80px auto;
+    margin: 80px auto 0;
 }
 
 .divs-footer {
@@ -647,7 +638,7 @@ footer>article {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .circle {
@@ -666,15 +657,5 @@ footer>article {
 @media screen and (max-width: 400px) {
     .bt5 {
         display: none;
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width: 960px) {
-    .bt5 {
-        display: none;
-    }
-
-    .text-footer {
-        font-size: inherit;
     }
 }
