@@ -228,9 +228,9 @@ div h6:hover,
 }
 
 .main-photo {
-    height: 360px;
+    height: 450px;
     object-fit: cover;
-    /* filter: drop-shadow(0 0 0.75rem rgb(56, 56, 56)); */
+    filter: drop-shadow(0 0 0.2rem rgb(56, 56, 56));
 }
 
 .section-1 {
@@ -246,6 +246,15 @@ div h6:hover,
     .section-1 {
         padding: 0;
         justify-content: center;
+    }
+
+    .main-text {
+        padding-left: 2rem;
+        font-size: 2.7rem;
+    }
+
+    .main-photo {
+        height: 400px;
     }
 }
 
@@ -268,7 +277,7 @@ div h6:hover,
     }
 
     .main-photo {
-        height: 360px;
+        height: 450px;
     }
 }
 
